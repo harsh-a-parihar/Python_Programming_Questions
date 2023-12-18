@@ -59,6 +59,8 @@ To leverage this repository effectively, ensure you have:
 
 3. **Practice and iterate:** Now, practice by writing your own code. It could be similar, but what matters is only that you got it. If you stuck, revisite the question and find out where are you wrong and fix it. Iterate the processes unless you feel comfortable.
 
+4. **Search:** It's the very basic thing you must know. If, you stuck somewhere very badly, just google it! stackoverflow it!
+
 
 ## Contributing
 
