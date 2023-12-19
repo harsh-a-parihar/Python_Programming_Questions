@@ -76,4 +76,6 @@ Let's learn, collaborate, and make the world of version control more accessible 
 
 ## License
 
-This project is licensed under the MIT License. Refer to [LICENSE.md](/LICENSE.md) for details.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is published under the [MIT](https://github.com/harsh-a-parihar/Python_Programming_Questions/blob/python/LICENSE) License.
