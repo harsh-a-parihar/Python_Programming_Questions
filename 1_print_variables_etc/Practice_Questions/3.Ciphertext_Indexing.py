@@ -16,7 +16,7 @@ conv_string=''
 #initiat variable 'x' to 0 for starting index from 0th index until 5th index, by iterating 'i+1' at every step.
 #then, create variable 'sht' and assign it 1/2/3 - i.e. how many letter's shift you want for each letter in 'string'.
 x=0
-sht=285       #1 letter shift
+sht=1       #1 letter shift
 
 #in the below code, firstly, we checked index of letters(0 to 5) in the alpha.
 #secondly, we added 1 shift(sht) to all the index of letters(0 to 5) in the alpha.

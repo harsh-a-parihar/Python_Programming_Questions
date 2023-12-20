@@ -56,10 +56,13 @@ To leverage this repository effectively, ensure you have:
    git clone https://github.com/yourusername/python-learning-repo.git
 
 2. **Understand each topic:** Read the questions and then answer code of all the topics and try to understand it.
+    - **NOTE :** If you stuck somewhere, you can refer to the `Concepts.md` file of that topic/session.
 
-3. **Practice and iterate:** Now, practice by writing your own code. It could be similar, but what matters is only that you got it. If you stuck, revisite the question and find out where are you wrong and fix it. Iterate the processes unless you feel comfortable.
+3. **Python Docs:** You can refer to this [Python Textbook](https://bsc-iitm.github.io/python-textbook/) for one time, it will help you to understand the concepts in one go.
 
-4. **Search:** It's the very basic thing you must know. If, you stuck somewhere very badly, just google it! stackoverflow it!
+4. **Practice and iterate:** Now, practice by writing your own code. It could be similar, but what matters is only that you got it. If you stuck, revisite the question and find out where are you wrong and fix it. Iterate the processes unless you feel comfortable.
+
+5. **Search:** It's the very basic thing you must know. If, you stuck somewhere very badly, just google it! stackoverflow it!
 
 
 ## Contributing
