@@ -9,7 +9,7 @@ import random
 l=[]        #you can also manually fill the list and then search for the element
 
 #loop to collect elements
-for i in  range(100000):
+for i in range(100000):
     l.append(random.randint(1,100000))
 
 #initialize a varible 0

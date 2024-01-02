@@ -26,40 +26,39 @@ while (polygon!='exit'):
     property=''
     if (polygon=='exit'):
         break
-    elif (polygon=='circle' or 'Circle'):
+    elif (polygon=='circle'):
         radius=float(input(('Enter the radius of cicle: ')))
         while (property==''):
             print('\nPROPERTY:\narea\nperimeter\nexit')
             property=input('\nchoose the property of circle or go back: ')
-            if (property=='area' or 'Area'):
+            if (property=='area'):
                 r=area_circle(radius)
                 print('Area of circle is',r,'sq.units')
                 property=''
-            elif (property=='perimeter' or 'Perimeter'):
+            elif (property=='perimeter'):
                 p=perimeter_circle(radius)
                 print('Perimeter of circle is',p,'sq.units')
                 property=''
-            elif (property=='back' or 'Back'):
+            elif (property=='back'):
                 break
             else:
                 print('Please select the correct polygon property')
                 property=''
-
-    elif (polygon=='rectangle' or 'Rectangle'):
+    elif (polygon=='rectangle'):
         l=float(input(('Enter the length of rectangle: ')))
         b=float(input(('Enter the breadth of rectangle: ')))
         while (property==''):
             print('\nPROPERTY:\narea\nperimeter\nexit')
             property=input('\nchoose the property of rectangle or go back: ')
-            if (property=='area' or 'Area'):
+            if (property=='area'):
                 ar=area_rect(l,b)
                 print('Area of rectangle is',ar,'units')
                 property=''
-            elif (property=='perimeter' or 'Perimeter'):
+            elif (property=='perimeter'):
                 pr=perimeter_rect(l,b)
                 print('Perimeter of rectangle is',pr,'units')
                 property=''
-            elif (property=='back' or 'Back'):
+            elif (property=='back'):
                 break
             else:
                 print('Please select the correct polygon property')

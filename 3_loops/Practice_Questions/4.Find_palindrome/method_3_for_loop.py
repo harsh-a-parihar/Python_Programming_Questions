@@ -10,9 +10,9 @@ abs_num=abs(num)
 str_absnum=str(abs_num)
 
 #make an empty string to store the reverse string.
-revese=''
+reverse=''
 for i in str_absnum:
-    reverse=reverse + 1
+    reverse=reverse + i
 
 #now, check if the given num was neg- or pos+ and print the result accordingly.
 if num<0:

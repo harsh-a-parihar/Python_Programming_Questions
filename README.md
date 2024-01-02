@@ -25,8 +25,12 @@ This repository offers a vast array of programming questions, making it an ideal
 - **1. Printing and Variables**
 - **2. Conditionals**
 - **3. Loops**
-- **4. Lists**
-- **5. Functions**
+- **4. Functions**
+- **5. Recursion**
+- **6. Lists and Tuples**
+- **7. Dicsonaries and Sets**
+- **8. File Handling**
+- **9. Object Oriented Programming(OOP)**
 
 
 ## 🧠 Getting Started
