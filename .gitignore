@@ -2,4 +2,7 @@
 .vscode
 
 # practice questions
-practice_here.py
+Practice_here.py
+
+#_pycache_ folder
+_pycache_
