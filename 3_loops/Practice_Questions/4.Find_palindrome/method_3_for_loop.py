@@ -12,7 +12,7 @@ str_absnum=str(abs_num)
 #make an empty string to store the reverse string.
 reverse=''
 for i in str_absnum:
-    reverse=reverse + i
+    reverse=i + reverse
 
 #now, check if the given num was neg- or pos+ and print the result accordingly.
 if num<0:
