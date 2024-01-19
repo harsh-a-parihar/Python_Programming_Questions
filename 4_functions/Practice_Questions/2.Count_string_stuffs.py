@@ -3,6 +3,8 @@ total number of characters and number of words.'''
 
 #Solution
 
+#Mothod.1
+
 #defining function for upper case letters
 def upper_case(sent):
     #assum upper case letters are 0
@@ -60,3 +62,33 @@ total_word=words(string)
 print('Number of words in the string',total_word)
 
 #-----------------------------------------------------------------------------------------------#
+
+#Method.2
+
+#create all in one function that counts uppercase & lowercase letters, total characters and total words.
+def count_string_stuffs(sent):
+    #initialize all stuffs to be counted
+    upper_case=0
+    lower_case=0
+    char = 0
+    word=1
+    #loop through every letter in string
+    for stuffs in sent:
+        char+=1                     #counts all characters
+        if (stuffs.isupper()):
+            upper_case+=1           #counts all uppercase letters
+        if (stuffs.islower()):
+            lower_case+=1           #counts all lowercase letters
+        if stuffs==' ':
+            word+=1                 #counts all words
+    
+    #print the result
+    print(f'Number of ..\nUppercase letter: {upper_case}\nLowercase letter: {lower_case}\nCharacters: {char}\nWords: {word}')
+
+#taking string input from user
+string=input('sent: ')
+
+#calling count_string_stuffs function and passing 'string' as parameter
+count_string_stuffs(string)
+
+#------------------------------------------------------------------------------------------------------------------#
