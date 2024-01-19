@@ -1,19 +1,25 @@
-'''Write a recursive function to calculate the factorial of a number.'''
+'''Find the factorial of the given number(user_input) using recursion.'''
 
 #Solution:
 
-#defining function and passing parameter num
-def fact(num):
-    #factorial of 1 is 1
-    if num==1:
-        return 1
+#create recursive function to find factorial of any 'num'
+def factorial(num):
+    #check if num is less than 1
+    if num<0:
+        return 'Not-defined!!'
     else:
-        #using function into function
-        return num*fact(num-1)
-    
-#taking input from user
-number=int(input('Enter the number you want factorial of: '))
-#calling function and printing result
-print(f'Factorial of {number} is ', fact(number))
+        #check if num is 1/0, then it's fact is 1
+        if (num==1) or (num==0):
+            return 1
+        #otherwise, recall function with parameter 'num-1' and * to 'num'
+        else:
+            return num*factorial(num-1)
 
-#---------------------------------------------------------------------------------------#
+#take input from user
+number=int(input('Enter number to find its factorial: '))
+
+#call the function and print result
+ans=factorial(number)
+print(f'factorial of {number} is {ans}')
+
+#-----------------------------------------------------------------------------------------------#
