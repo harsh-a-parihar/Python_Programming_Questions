@@ -6,11 +6,11 @@
 ## Resource to learn
 
 1. Go through the below sub-chapters of `chapter.8` of this **Python Docs**, where you will learn about File Handling in Python.
-    - [Chapter.8.1](https://bsc-iitm.github.io/python-textbook/chapter-8/lesson-8.1/)
-    - [Chapter.8.2](https://bsc-iitm.github.io/python-textbook/chapter-8/lesson-8.2/)
-    - [Chapter.8.3](https://bsc-iitm.github.io/python-textbook/chapter-8/lesson-8.3/)
-    - [Chapter.8.4](https://bsc-iitm.github.io/python-textbook/chapter-8/lesson-8.4/)
-    - [Chapter.8.5](https://bsc-iitm.github.io/python-textbook/chapter-8/lesson-8.5/)
+    - [Chapter.7.1](https://bsc-iitm.github.io/python-textbook/chapter-7/lesson-7.1/)
+    - [Chapter.7.2](https://bsc-iitm.github.io/python-textbook/chapter-7/lesson-7.2/)
+    - [Chapter.7.3](https://bsc-iitm.github.io/python-textbook/chapter-7/lesson-7.3/)
+    - [Chapter.7.4](https://bsc-iitm.github.io/python-textbook/chapter-7/lesson-7.4/)
+    - [Chapter.7.5](https://bsc-iitm.github.io/python-textbook/chapter-7/lesson-7.5/)
 2. Learn more about File Handling in Python from [here](https://www.w3schools.com/python/python_file_handling.asp).
 
 ## What next?
