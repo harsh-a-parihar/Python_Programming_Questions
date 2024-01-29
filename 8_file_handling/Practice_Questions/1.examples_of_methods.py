@@ -28,4 +28,9 @@ print(x.read())     # by default .read() reads the whole text, you can also spec
 x=open('8_file_handling\Practice_Questions\example_files\example.txt','r')
 print(x.readline())
 
+# To change the position of a file and return the new one
+x=open('8_file_handling\Practice_Questions\example_files\example.txt','r')
+x.seek(4)
+print(x.readline())
+
 #-----------------------------------------------------------------------------------------------------------#
