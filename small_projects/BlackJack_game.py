@@ -76,7 +76,7 @@ class Hand:
     def is_blackjack(self):
         return self.get_value()==21
     
-    def display(self,show_all_dealer_cards):
+    def display(self,show_all_dealer_cards=False):
         print(f'''{"Dealer's" if self.dealer else "Your"} hand:''')
         for index, card in enumerate(self.cards):
             if index==0 and self.dealer and not show_all_dealer_cards and not self.is_blackjack():
@@ -89,68 +89,69 @@ class Hand:
     
 class Game:
     def play(self):
-        game_number=0
-        games_to_play=0
+        games_to_play = 0
 
-        while games_to_play<=0:
+        while games_to_play <= 0:
             try:
-                games_to_play=int(input('How many times you want to play? '))
-            except:
+                games_to_play = int(input('How many times you want to play? '))
+            except ValueError:
                 print('You must enter a number.')
         
-        while game_number < games_to_play:
-            game_number+=1
+        for game_number in range(1, games_to_play + 1):
+            print()
+            print('*' * 30)
+            print(f"Game {game_number} of {games_to_play}")
+            print('*' * 30)
 
-            deck=Deck()
+            deck = Deck()
             deck.shuffle()
 
-            player_hand=Hand()
-            dealer_hand=Hand(dealer=True)
+            player_hand = Hand()
+            dealer_hand = Hand(dealer=True)
 
             for i in range(2):
                 player_hand.add_cards(deck.deal(1))
                 dealer_hand.add_cards(deck.deal(1))
 
-            print()
-            print('*' * 30)
-            print(f"Game {game_number} of {games_to_play}")
-            print('*' * 30)
             player_hand.display()
             dealer_hand.display()
 
-            if self.check_winner(player_hand,dealer_hand):
+            if self.check_winner(player_hand, dealer_hand):
                 continue
 
-            choice=''
-            while player_hand.get_value() > 21 and choice not in ['s','stand']:
-                choice=input("Please choose 'Hit' or 'Stand': ").lower()
-                while choice not in ['s','h','stand','hit']:
-                    choice=input("Please enter 'Hit' or 'Stand' (or h/s): ").lower()
-                    print()
-                    if choice in ['h','hit']:
-                        player_hand.add_cards(deck.deal(1))
-                        player_hand.display()
+            choice = ''
+            while player_hand.get_value() < 21 and choice not in ['s', 'stand']:
+                choice = input("Please choose 'Hit' or 'Stand': ").lower()
+                while choice not in ['s', 'h', 'stand', 'hit']:
+                    choice = input("Please enter 'Hit' or 'Stand' (or h/s): ").lower()
+                print()
+                if choice in ['h', 'hit']:
+                    player_hand.add_cards(deck.deal(1))
+                    player_hand.display()
             
-            if self.check_winner(player_hand,dealer_hand):
+                if self.check_winner(player_hand, dealer_hand):
+                    break
+            
+            if self.check_winner(player_hand, dealer_hand):
                 continue
 
-            player_hand_value=player_hand.get_value()
-            dealer_hand_value=dealer_hand.get_value()
+            player_hand_value = player_hand.get_value()
+            dealer_hand_value = dealer_hand.get_value()
 
             while dealer_hand_value < 17:
                 dealer_hand.add_cards(deck.deal(1))
-                dealer_hand_value=dealer_hand.get_value()
+                dealer_hand_value = dealer_hand.get_value()
             
             dealer_hand.display(show_all_dealer_cards=True)
 
-            if self.check_winner(player_hand,dealer_hand):
+            if self.check_winner(player_hand, dealer_hand):
                 continue
 
             print('Final Result!')
-            print("Your hand: ",player_hand_value)
-            print("Dealer hand: ",dealer_hand_value)
+            print("Your hand: ", player_hand_value)
+            print("Dealer hand: ", dealer_hand_value)
 
-            self.check_winner(player_hand,dealer_hand,True)
+            self.check_winner(player_hand, dealer_hand, True)
 
         print('\nThanks for playing.')
         
