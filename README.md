@@ -6,7 +6,7 @@
 </div>
 
 
-Welcome to the Python Programming Questions-Basics to Advanced! This repository emphasizes practicing Python programming through a comprehensive collection of questions spanning from basic to advanced levels.
+Welcome to the Python Programming Questions-Basics to Advanced! This repository emphasizes practicing Python programming through a comprehensive collection of questions and some small projects spanning from basic to advanced levels.
 
 ## 📚 Table of Contents
 
@@ -31,6 +31,7 @@ This repository offers a vast array of programming questions, making it an ideal
 - **7. Dicsonaries and Sets**
 - **8. File Handling**
 - **9. Object Oriented Programming(OOP)**
+- **small_projects**
 
 
 ## 🧠 Getting Started
